@@ -337,8 +337,8 @@ button {
     gap: 83px;
     position: relative;
     top: 0;
-    left: 40%;
-    transform: translateX(-40%)
+    left: 50%;
+    transform: translateX(-50%)
 }
 
 .services .services-header {
@@ -521,8 +521,8 @@ button {
     flex-direction: column;
     position: relative;
     top: 0;
-    left: 40%;
-    transform: translateX(-40%)
+    left: 50%;
+    transform: translateX(-50%)
 }
 
 .learn img {
