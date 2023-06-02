@@ -71,6 +71,11 @@ button {
     font-size: 22px;
     font-weight: 400;
     cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+.navbar .navbar-tags ul li:hover a {
+    color: var(--primary-color);
 }
 
 .navbar .navbar-tags ul li:first-child a {
@@ -119,6 +124,13 @@ button {
     border-radius: 40px;
     padding: 16px 85.14px 16px 85.77px;
     margin-bottom: 49px;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+.banner .banner-focal button:hover {
+    background-color: var(--primary-color);
+    /* color: var(--white-color); */
 }
 
 .banner .banner-focal button a {
@@ -263,6 +275,14 @@ button {
     background-color: var(--white-color);
     border-radius: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: .3s all ease-in-out;
+}
+
+.work .work-cards .cards:hover {
+    top: -10px;
 }
 
 .work .work-cards .cards p {
@@ -451,6 +471,13 @@ button {
     line-height: 40px;
     color: var(--black-color);
     border-radius: 40px;
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
+    transition: .3s all ease-in-out;
+}
+
+.services .services-cards .card .card-bottom .card-btn:hover {
+    background-color: var(--primary-color);
 }
 
 .services .services-cards .card:nth-child(2) {
@@ -462,6 +489,11 @@ button {
 
 .services .services-cards .card:nth-child(2) .card-btn {
     background-color: var(--primary-color);
+}
+
+.services .services-cards .card:nth-child(2) .card-btn:hover {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
 }
 
 /* Learn */
@@ -516,6 +548,12 @@ button {
     font-weight: 600;
     line-height: 25.2px;
     margin-top: 41px;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+.learn .learn-right .learn-text .learn-text--btn:hover {
+    background-color: var(--primary-color);
 }
 
 /* Footer */
@@ -582,4 +620,13 @@ button {
     display: flex;
     flex-direction: row;
     gap: 25px;
+}
+
+.footer .footer-right .footer-right--link ul li a {
+    color: var(--text-color);
+    transition: .3s all ease-in-out;
+}
+
+.footer .footer-right .footer-right--link ul li a:hover {
+    color: var(--primary-color);
 }
