@@ -80,10 +80,6 @@ button {
     align-items: center;
 }
 
-.navbar .navbar-tags ul li a i {
-    font-size: 10px;
-}
-
 .navbar .navbar-tags ul li:hover a {
     color: var(--primary-color);
 }
@@ -384,6 +380,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 40px;
+    background-color: var(--white-color);
 }
 
 .services .services-cards .card .card-top {
@@ -395,10 +392,15 @@ button {
 }
 
 .services .services-cards .card .card-header .card-header--icon {
-    width: 54px;
-    height: 56px;
-    background-image: url(../img/icons/icon-1.png);
-    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    /* background-image: url(../img/icons/icon-1.png); */
+    /* background-repeat: no-repeat; */
+}
+
+.services .services-cards .card .card-header .card-header--icon img {
+    width: 100%;
+    height: 100%;
 }
 
 .services .services-cards .card .card-header .card-header--title h3{
