@@ -17,6 +17,7 @@ body {
     height: 100%;
     overflow-x: hidden;
     font-family: 'Grandstander', cursive;
+    background-color: #F7FEFF;
     /* position: fixed;
     top: 0; */
 }
@@ -62,6 +63,8 @@ button {
 
 .navbar .navbar-tags ul{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 42px;
 }
 
@@ -72,6 +75,13 @@ button {
     font-weight: 400;
     cursor: pointer;
     transition: .3s all ease-in-out;
+    display: flex;
+    gap: 7.5px;
+    align-items: center;
+}
+
+.navbar .navbar-tags ul li a i {
+    font-size: 10px;
 }
 
 .navbar .navbar-tags ul li:hover a {
@@ -182,7 +192,7 @@ button {
 .banner .banner-hero {
     width: 668px;
     height: 668px;
-    background-color: var(--secondary-color);
+    background-color: rgba(227, 250, 255, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,6 +200,7 @@ button {
     position: absolute;
     top: 143px;
     right: -118px;
+    /* opacity: .5; */
 }
 
 .banner .banner-hero .banner-img {
@@ -324,6 +335,10 @@ button {
     justify-content: center;
     align-items: center;
     gap: 83px;
+    position: relative;
+    top: 0;
+    left: 40%;
+    transform: translateX(-40%)
 }
 
 .services .services-header {
@@ -504,6 +519,10 @@ button {
     position: relative;
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 40%;
+    transform: translateX(-40%)
 }
 
 .learn img {
