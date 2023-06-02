@@ -18,8 +18,6 @@ body {
     overflow-x: hidden;
     font-family: 'Grandstander', cursive;
     background-color: #F7FEFF;
-    /* position: fixed;
-    top: 0; */
 }
 
 ul {
@@ -35,18 +33,33 @@ button {
     border: none;
 }
 
-/* Navbar */
-.navbar {
+.flex-col {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 78px 0 66px;
-}
-
-.navbar .navbar-logo {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.flex-col-no-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    justify-content: space-between;
+    padding: 25px 78px 0 66px;
 }
 
 .navbar .navbar-logo img {
@@ -62,9 +75,6 @@ button {
 }
 
 .navbar .navbar-tags ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 42px;
 }
 
@@ -75,9 +85,7 @@ button {
     font-weight: 400;
     cursor: pointer;
     transition: .3s all ease-in-out;
-    display: flex;
     gap: 7.5px;
-    align-items: center;
 }
 
 .navbar .navbar-tags ul li:hover a {
@@ -124,7 +132,6 @@ button {
 }
 
 .banner .banner-focal button {
-    text-align: center;
     background-color: var(--secondary-color);
     box-shadow: 0px 4px 10px rgba(33, 183, 226, 0.3);
     border-radius: 40px;
@@ -136,13 +143,11 @@ button {
 
 .banner .banner-focal button:hover {
     background-color: var(--primary-color);
-    /* color: var(--white-color); */
 }
 
 .banner .banner-focal button a {
     display: inline-block;
     width: 227.09px;
-    /* height: 28px; */
     font-family: 'Outfit', sans-serif;
     color: var(--black-color);
     font-size: 22px;
@@ -151,14 +156,11 @@ button {
 }
 
 .banner .banner-focal .banner-focal--stats {
-    display: flex;
     width: 394px;
     height: 61px;
 }
 
 .banner .banner-focal .banner-focal--stats .focal-stats--left {
-    display: flex;
-    align-items: center;
     gap: 10px;
 }
 
@@ -179,8 +181,6 @@ button {
 }
 
 .banner .banner-focal .banner-focal--stats .focal-stats--right {
-    display: flex;
-    align-items: center;
     gap: 8px;
     padding-left: 54px;
 }
@@ -189,21 +189,16 @@ button {
     width: 668px;
     height: 668px;
     background-color: rgba(227, 250, 255, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
     position: absolute;
     top: 143px;
     right: -118px;
-    /* opacity: .5; */
 }
 
 .banner .banner-hero .banner-img {
     width: 523px;
     height: 523px;
     object-fit: contain;
-    /* background: rgba(208, 246, 255, 0.5); */
 }
 
 .banner .banner-hero .img-bubles {
@@ -236,17 +231,9 @@ button {
     width: 100%;
     height: 600px;
     background-color: var(--secondary-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* gap: 70px; */
 }
 
 .work .work-header {
-    display: flex;
-    flex-direction: column;
     gap: 14px;
     width: 735px;
     height: 110px;
@@ -271,7 +258,6 @@ button {
 .work .work-cards {
     width: 1121px;
     height: 345.53px;
-    display: flex;
     justify-content: space-around;
     margin-top: 70px;
 }
@@ -325,25 +311,13 @@ button {
 .services {
     width: 1232px;
     height: 802px;
-    margin: 60px 40px 179px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 60px auto 179px;
     gap: 83px;
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%)
 }
 
 .services .services-header {
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
     width: 735px;
     height: 107px;
-    text-align: center;
 }
 
 .services .services-header h3 {
@@ -352,6 +326,7 @@ button {
     font-weight: 400;
     line-height: 31px;
     text-transform: uppercase;
+    margin-bottom: 11px;
 }
 
 .services .services-header h1 {
@@ -365,8 +340,6 @@ button {
 .services .services-cards {
     width: 100%;
     height: 612px;
-    display: flex;
-    /* align-items: flex-end; */
     justify-content: space-between;
     border-radius: 20px 0px 0px 20px;
 }
@@ -394,8 +367,6 @@ button {
 .services .services-cards .card .card-header .card-header--icon {
     width: 50px;
     height: 50px;
-    /* background-image: url(../img/icons/icon-1.png); */
-    /* background-repeat: no-repeat; */
 }
 
 .services .services-cards .card .card-header .card-header--icon img {
@@ -422,8 +393,6 @@ button {
 .services .services-cards .card .card-list {
     margin-top: 20px;
     margin-bottom: 36px;
-    display: flex;
-    flex-direction: column;
     gap: 24px;
 }
 
@@ -437,8 +406,6 @@ button {
 }
 
 .services .services-cards .card .card-list .card-list--ul {
-    display: flex;
-    flex-direction: column;
     gap: 26px;
 }
 
@@ -517,14 +484,8 @@ button {
 .learn {
     width: 1280px;
     height: 500px;
-    margin: 0 40px 165px;
+    margin: 0 auto 165px;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%)
 }
 
 .learn img {
@@ -539,17 +500,12 @@ button {
     background-color: var(--secondary-color);
     border-radius: 120px;
     margin-top: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 .learn .learn-right .learn-text {
     width: 565px;
-    text-align: center;
     margin-left: auto;
     margin-right: 97px;
-    padding-top: 73px;
 }
 
 .learn .learn-right .learn-text h1 {
@@ -590,9 +546,6 @@ button {
 
 .footer .footer-left {
     height: 100%;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
 }
 
 .footer .footer-left .footer-left--icon .icon1 {
@@ -618,7 +571,7 @@ button {
     font-family: 'Inter', sans-serif;
     width: 584px;
     height: 173px;
-    display: flex;
+    align-items: flex-start;
     gap: 63px;
     margin-top: 49px;
 }
@@ -632,8 +585,6 @@ button {
 }
 
 .footer .footer-right .footer-right--link ul {
-    display: flex;
-    flex-direction: column;
     gap: 16px;
 }
 

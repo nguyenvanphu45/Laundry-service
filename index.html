@@ -16,16 +16,16 @@
     />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-logo">
+    <nav class="navbar flex-row">
+        <div class="navbar-logo flex-row">
             <img src="./assets/img/logo.png" alt="">
             <h2 class="navbar-logo--text">Suds Laundry</h2>
         </div>
         <div class="navbar-tags">
-            <ul>
+            <ul class="flex-row">
                 <li><a href="">Home</a></li>
                 <li><a href="">How it works</a></li>
-                <li><a href="">Services <img src="./assets/img/icons/down.png" alt=""></a></li>
+                <li><a href="" class="flex-row">Services <img src="./assets/img/icons/down.png" alt=""></a></li>
                 <li><a href="">Locations</a></li>
                 <li><a href="">Contact us</a></li>
             </ul>
@@ -39,33 +39,33 @@
                 Suds Laundry service will wash, dry, and fold your laundry at an
                 affordable price. Pickup and drop-off options available!
             </p>
-            <button>
+            <button class="text-center">
                 <a href="">How it works</a>
             </button>
-            <div class="banner-focal--stats">
-                <div class="focal-stats--left">
+            <div class="banner-focal--stats flex-row">
+                <div class="focal-stats--left flex-row">
                     <h3>18m+</h3>
                     <p>Happy Customers</p>
                 </div>
-                <div class="focal-stats--right">
+                <div class="focal-stats--right flex-row">
                     <h3>10+</h3>
                     <p>Years of Experience</p>
                 </div>
             </div>
         </div>
-        <div class="banner-hero">
+        <div class="banner-hero flex-row">
             <img src="./assets/img/br.png" class="banner-img" alt="">
             <img src="./assets/img/bubbles.png" alt="" class="img-bubles img-bubles--top">
             <img src="./assets/img/bubbles.png" alt="" class="img-bubles img-bubles--left">
             <img src="./assets/img/bubbles.png" alt="" class="img-bubles img-bubles--bottom">
         </div>
     </section>
-    <section class="work">
-        <div class="work-header">
+    <section class="work flex-col text-center">
+        <div class="work-header flex-col">
             <h3>How it works</h3>
             <h1>Get it done in 4 steps</h1>
         </div>
-        <div class="work-cards">
+        <div class="work-cards flex-row">
             <div class="cards">
                 <p>Step 1</p>
                 <h3>Pickup</h3>
@@ -96,13 +96,13 @@
             </div>
         </div>
     </section>
-    <section class="services">
-        <div class="services-header">
+    <section class="services flex-col">
+        <div class="services-header text-center">
             <h3>Services</h3>
             <h1>Services & Packages</h1>
         </div>
-        <div class="services-cards">
-            <div class="card">
+        <div class="services-cards flex-row">
+            <div class="card flex-col-no-center">
                 <div class="card-top">
                     <div class="card-header">
                         <div class="card-header--icon">
@@ -113,12 +113,12 @@
                             <p>Perfect for people who live alone</p>
                         </div>
                     </div>
-                    <div class="card-list">
+                    <div class="card-list flex-col-no-center">
                         <h3 class="card-list--title">
                             What’s included
                         </h3>
-                        <ul class="card-list--ul">
-                            <li>
+                        <ul class="card-list--ul flex-col-no-center">
+                            <li class="">
                                 <i class="fa-solid fa-check"></i>
                                 <p>2 loads per week</p>
                             </li>
@@ -138,7 +138,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card flex-col-no-center">
                 <div class="card-top">
                     <div class="card-header">
                         <div class="card-header--icon">
@@ -149,11 +149,11 @@
                             <p>Perfect for couples size 3-6</p>
                         </div>
                     </div>
-                    <div class="card-list">
+                    <div class="card-list flex-col-no-center">
                         <h3 class="card-list--title">
                             What’s included
                         </h3>
-                        <ul class="card-list--ul">
+                        <ul class="card-list--ul flex-col-no-center">
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>4 loads per week</p>
@@ -182,7 +182,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card flex-col-no-center">
                 <div class="card-top">
                     <div class="card-header">
                         <div class="card-header--icon">
@@ -193,11 +193,11 @@
                             <p>Perfect for families size 4-6</p>
                         </div>
                     </div>
-                    <div class="card-list">
+                    <div class="card-list flex-col-no-center">
                         <h3 class="card-list--title">
                             What’s included
                         </h3>
-                        <ul class="card-list--ul">
+                        <ul class="card-list--ul flex-col-no-center">
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>6 loads per week</p>
@@ -232,17 +232,17 @@
             </div>
         </div>
     </section>
-    <section class="learn">
+    <section class="learn flex-col">
         <img src="./assets/img/thinking.png" alt="">
-        <div class="learn-right">
-            <div class="learn-text">
+        <div class="learn-right flex-col">
+            <div class="learn-text text-center">
                 <h1>Hard time deciding what’s best for you?</h1>
                 <button class="learn-text--btn">Learn more</button>
             </div>
         </div>
     </section>
     <footer class="footer">
-        <div class="footer-left">
+        <div class="footer-left flex-row">
             <div class="footer-left--icon">
                 <img src="./assets/img/footer/bubbles-footer2.png" class="icon2" alt="">
                 <img src="./assets/img/footer/bubbles-footer1.png" class="icon1" alt="">
@@ -251,10 +251,10 @@
                 Suds Laundry
             </h2>
         </div>
-        <div class="footer-right">
+        <div class="footer-right flex-row">
             <div class="footer-right--link">
                 <h4>About us</h4>
-                <ul>
+                <ul class="flex-col-no-center">
                     <li><a href="">About us</a></li>
                     <li><a href="">Creators</a></li>
                     <li><a href="">Philosophy</a></li>
@@ -263,7 +263,7 @@
             </div>
             <div class="footer-right--link">
                 <h4>Company</h4>
-                <ul>
+                <ul class="flex-col-no-center">
                     <li><a href="">Our team</a></li>
                     <li><a href="">Terms</a></li>
                     <li><a href="">How it works</a></li>
@@ -272,7 +272,7 @@
             </div>
             <div class="footer-right--link">
                 <h4>Services</h4>
-                <ul>
+                <ul class="flex-col-no-center">
                     <li><a href="">Pickup</a></li>
                     <li><a href="">Drop off</a></li>
                     <li><a href="">Laundry</a></li>
@@ -280,7 +280,7 @@
             </div>
             <div class="footer-right--link">
                 <h4>Check us out</h4>
-                <ul>
+                <ul class="flex-row">
                     <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
