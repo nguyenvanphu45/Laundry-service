@@ -329,7 +329,7 @@ button {
 .services {
     width: 1232px;
     height: 802px;
-    margin: 60px 104px 179px;
+    margin: 60px 40px 179px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -515,7 +515,7 @@ button {
 .learn {
     width: 1280px;
     height: 500px;
-    margin: 0 80px 165px;
+    margin: 0 40px 165px;
     position: relative;
     display: flex;
     flex-direction: column;
